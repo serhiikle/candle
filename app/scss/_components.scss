@@ -1,0 +1,68 @@
+//================ MENU =====================
+
+.menu {
+
+  &__list {
+    display: flex;
+    gap: 20px;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 3px;
+      background-color: $btnBgColor;
+      bottom: -4px;
+      left: 0;
+      transition: width .4s;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 3px;
+      background-color: $btnBgColor;
+      bottom: -4px;
+      right: 0;
+      transition: width .4s;
+    }
+
+    &:hover::before,
+    &:hover::after {
+      width: 50%;
+    }
+  }
+}
+
+//================ PHONE =====================
+
+.phone {
+  position: relative;
+  transition: color .3s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/phone.svg");
+    background-position: center;
+    top: -2px;
+    left: -21px;
+    transition: transform .3s;
+  }
+
+  &:hover::before {
+    transform: translateX(-3px);
+  }
+
+  &:hover {
+    color: $btnBgColor;
+  }
+}
