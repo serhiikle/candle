@@ -1,0 +1,42 @@
+/*========================== HEADER =================================*/
+
+@media (max-width: 900px) {
+  .footer {
+
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+
+    &__contacts {
+      max-width: 100%;
+      text-align: center;
+      padding-block-start: 15px;
+    }
+
+    &__social {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 10px;
+  }
+
+  .header {
+
+    &__phone {
+      &::before {
+        width: 14px;
+        height: 14px;
+        left: -15px;
+      }
+    }
+  }
+
+  .container {
+    padding-inline: 14px;
+    max-width: 640px;
+  }
+}
