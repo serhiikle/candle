@@ -27,3 +27,10 @@ a {
   padding-inline: 10px;
   margin: 0 auto;
 }
+
+.header__wrapper,
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
