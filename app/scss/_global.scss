@@ -17,6 +17,10 @@ body {
   line-height: 1.2;
 }
 
+main {
+  overflow-x: clip;
+}
+
 a {
   text-decoration: none;
   color: inherit;
