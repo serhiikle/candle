@@ -1,0 +1,32 @@
+.hero {
+  margin-bottom: 150px;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__content {
+    max-width: 385px;
+    padding-top: 165px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &__title {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    margin-bottom: 50px;
+  }
+
+  &__image {
+
+    img {
+      width: 100%;
+      transform: translate(195px, 0px);
+    }
+  }
+}

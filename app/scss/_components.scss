@@ -51,9 +51,8 @@
   }
 }
 
-//================ BUTTON =====================
 
-.button {
+.burger-menu-btn {
   display: none;
   border: none;
   background-color: transparent;
@@ -63,6 +62,7 @@
   flex-direction: column;
   padding: 0;
   z-index: 5;
+  cursor: pointer;
 
   span {
     display: inline-block;
@@ -70,5 +70,31 @@
     height: 1px;
     background-color: $teachColor;
 
+  }
+}
+
+//================ TITLE =====================
+
+.title {
+  font-size: 40px;
+  font-family: "Yeseva One", serif;
+}
+
+//================ BUTTON-BUY =====================
+
+.button-buy {
+  background-color: $btnBgColor;
+  border: none;
+  padding: 18px 54px;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: $btnColor;
+  cursor: pointer;
+  transition: box-shadow .1s, background-color .2s;
+
+  &:hover {
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .2);
+    background-color: $btnBgHoverColor;
   }
 }
