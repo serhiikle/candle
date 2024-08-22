@@ -151,6 +151,7 @@
 
 @media (max-width: 480px) {
   .hero {
+    margin-bottom: 100px;
 
     &__content {
       max-width: 225px;
@@ -181,9 +182,11 @@
 
 @media (max-width: 360px) {
   .hero {
+    margin-bottom: 50px;
 
     &__content {
       max-width: 203px;
+      padding-top: 50px;
     }
 
     &__title {
@@ -197,12 +200,12 @@
       margin-bottom: 15px;
       max-width: 190px;
     }
-  }
 
-  &__image {
-    img {
-      width: 70%;
-      transform: translate(180px, 80px);
+    &__image {
+      img {
+        width: 70%;
+        transform: translate(180px, 20px);
+      }
     }
   }
 }
