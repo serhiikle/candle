@@ -11,7 +11,7 @@
   }
 
   &__content {
-    max-width: 370px;
+    min-width: 370px;
   }
 
   &__title,
@@ -39,6 +39,13 @@
       background-position: center;
       background-repeat: no-repeat;
       z-index: 2;
+    }
+
+    figure {
+      font-size: 11px;
+      img {
+        margin-bottom: 10px;
+      }
     }
   }
 }
