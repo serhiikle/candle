@@ -92,10 +92,12 @@
   color: $btnColor;
   cursor: pointer;
   transition: box-shadow .1s, background-color .2s;
+  justify-self: center;
 
   &:hover {
     box-shadow: 2px 2px 3px rgba(0, 0, 0, .2);
-    background-color: $btnBgHoverColor;
+    background-color: $teachColor;
+    color: $whiteColor;
   }
 }
 
@@ -120,8 +122,8 @@
 
   &__content {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     position: relative;
 
