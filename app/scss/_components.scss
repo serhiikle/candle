@@ -98,3 +98,53 @@
     background-color: $btnBgHoverColor;
   }
 }
+
+//================ SECTION-GROUP =====================
+
+.section-group {
+  margin-bottom: 159px;
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 20px;
+  }
+
+  &__head {
+    max-width: 372px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 33px;
+      left: -22px;
+      bottom: -11px;
+      background-image: url("../images/about-deco.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 1000%;
+      height: 1px;
+      background-color: $secondaryBgColor;
+    }
+  }
+}
