@@ -1,0 +1,19 @@
+.steps {
+  
+  &__list {
+    padding-bottom: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px 25px;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+  }
+
+  &__text {
+    padding-bottom: 40px;
+  }
+}
