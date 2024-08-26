@@ -1,4 +1,8 @@
 .steps {
+
+  &__head {
+    padding-right: 20px;
+  }
   
   &__list {
     padding-bottom: 70px;
@@ -11,9 +15,32 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 40px;
-  }
+    position: relative;
+    counter-increment: number;
+    
+    &::before {
+      content: "0" counter(number);
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      font-size: 30px;
+      color: $numColor;
+      font-family: "Yeseva One", serif;
 
-  &__text {
-    padding-bottom: 40px;
+    }
+
+    &.reverse::before {
+      left: auto;
+      right: 0;
+    }
+
+    &:nth-child(n + 10)::before {
+      content: counter(number);
+    }
+
+    &-text {
+      padding-bottom: 40px;
+      font-size: 12px;
+    }
   }
 }
