@@ -45,8 +45,19 @@ a {
   }
 }
 
+.courses__item-name,
+.courses__item-time,
+.courses__item-price {
+  font-size: 11px;
+  font-family: "Yeseva One", serif;
+  color: $whiteColor;
+  background-color: $numColor;
+  position: absolute;
+}
+
 .products,
-.steps {
+.steps,
+.courses {
   margin-bottom: 159px;
 
   &__wrapper {

@@ -1,0 +1,84 @@
+.courses {
+
+  // .courses__wrapper
+  &__wrapper {
+    gap: 20px;
+  }
+
+  // .courses__head
+  &__head {
+  }
+
+  // .courses__title
+  &__title {
+  }
+
+  // .courses__text
+  &__text {
+  }
+
+  // .courses__content
+  &__content {
+    padding-bottom: 60px;
+  }
+
+  &__button {
+    padding: 18px 25px;
+  }
+
+  // .courses__item
+  &__item {
+    max-width: 270px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  // .courses__item-image
+  &__item-image {
+    margin-bottom: 28px;
+    position: relative;
+
+    img {
+      display: block;
+    }
+  }
+
+  // .courses__item-name
+  &__item-name {
+    padding: 15px;
+    left: -1%;
+    top: 45%;
+  }
+
+  // .courses__item-time
+  &__item-time {
+    padding: 7px 15px;
+    left: -1%;
+    top: 61%;
+
+    span {
+      font-family: "Comfortaa", sans-serif;
+      font-size: 10px;
+      line-height: 11px;
+    }
+  }
+
+  // .courses__item-price
+  &__item-price {
+    padding: 19px 19px 19px 10px;
+    right: -4%;
+    bottom: -4%;
+  }
+
+  // .courses__item-title
+  &__item-title {
+    margin-bottom: 15px;
+    font-family: "Yeseva One", serif;
+    font-size: 16px;
+  }
+
+  // .courses__item-description
+  &__item-description {
+    margin-bottom: 24px;
+  }
+}
