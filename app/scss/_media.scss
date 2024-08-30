@@ -1,8 +1,10 @@
+/* ==========================================================================
+========================       MEDIA 1200px      ============================
+===========================================================================*/
+
 @media (max-width: 1200px) {
   .team {
-
     &__item {
-
       &-content {
         bottom: -20%;
       }
@@ -10,19 +12,26 @@
   }
 }
 
+/* ==========================================================================
+========================       MEDIA 1000px      ============================
+===========================================================================*/
+
 @media (max-width: 1000px) {
+
+  .team__head,
+  .hero__text,
+  .products__head,
+  .courses__head {
+    max-width: 300px;
+  }
+
   .header {
     margin-bottom: 0;
   }
 
   .hero {
-
     &__content {
       padding-top: 120px;
-    }
-
-    &__text {
-      max-width: 300px;
     }
 
     &__image {
@@ -34,7 +43,6 @@
   }
 
   .about {
-
     &__content {
       min-width: 300px;
     }
@@ -45,9 +53,7 @@
   }
 
   .products {
-
     &__head {
-      max-width: 300px;
       font-size: 10px;
     }
 
@@ -57,7 +63,6 @@
   }
 
   .steps {
-
     &__head {
       padding-right: 25px;
     }
@@ -68,26 +73,19 @@
   }
 
   .courses {
-    &__head {
-      max-width: 300px;
-    }
-
     &__content {
       gap: 30px;
     }
   }
-
-  .team {
-    
-    &__head {
-      max-width: 290px;
-    }
-  }
 }
 
-@media (max-width: 940px) {
-  .steps {
+/* ==========================================================================
+=========================       MEDIA 940px      ============================
+===========================================================================*/
 
+@media (max-width: 940px) {
+
+  .steps {
     &__head {
       max-width: 201px;
       padding-right: 13px;
@@ -115,10 +113,13 @@
   }
 }
 
+/* ==========================================================================
+=========================       MEDIA 900px      ============================
+===========================================================================*/
 
 @media (max-width: 900px) {
-  .footer {
 
+  .footer {
     &__wrapper {
       flex-wrap: wrap;
     }
@@ -133,17 +134,60 @@
       justify-content: center;
     }
   }
-
-  
 }
 
+/* ==========================================================================
+=========================       MEDIA 768px      ============================
+===========================================================================*/
+
 @media (max-width: 768px) {
-  body {
+
+  .hero__title,
+  .header__text,
+  .about__title {
+    margin-bottom: 20px;
+  }
+
+  body,
+  .about__text,
+  .products__text,
+  .courses__text,
+  .courses__item-description,
+  .team__text {
     font-size: 10px;
   }
 
-  .header {
+  .hero__image,
+  .products__item-image img,
+  .courses__item-image img,
+  .team__item-image img {
+    width: 100%;
+  }
 
+  .about__content,
+  .steps__head {
+    min-width: 200px;
+  }
+
+  .about__title,
+  .products__title,
+  .courses__title,
+  .team__title {
+    font-size: 15px;
+  }
+
+  .products__head,
+  .courses__head,
+  .team__head {
+    max-width: 200px;
+  }
+
+  .courses__button,
+  .courses__item-title {
+    font-size: 12px;
+  }
+
+  .header {
     &__phone {
       &::before {
         width: 14px;
@@ -159,47 +203,29 @@
   }
 
   .hero {
-
     &__content {
       max-width: 304px;
     }
 
     &__title {
       font-size: 20px;
-      margin-bottom: 20px;
     }
 
     &__text {
-      margin-bottom: 20px;
       line-height: 1.5;
       max-width: 245px;
     }
 
     &__image {
       img {
-        width: 100%;
         transform: translate(205px, 40px);
       }
     }
   }
 
   .about {
-
     &__wrapper {
       column-gap: 45px;
-    }
-
-    &__content {
-      min-width: 200px;
-    }
-
-    &__title {
-      font-size: 15px;
-      margin-bottom: 20px;
-    }
-
-    &__text {
-      font-size: 10px;
     }
 
     &__images {
@@ -227,21 +253,8 @@
   }
 
   .products {
-
     &__wrapper {
       column-gap: 30px;
-    }
-
-    &__title {
-      font-size: 15px;
-    }
-
-    &__text {
-      font-size: 10px;
-    }
-
-    &__head {
-      max-width: 200px;
     }
 
     &__content {
@@ -250,20 +263,10 @@
 
     &__item {
       max-width: 188px;
-
-      &-image {
-        img {
-          width: 100%;
-        }
-      }
     }
   }
 
   .steps {
-    &__head {
-      min-width: 201px;
-    }
-
     &__item {
       column-gap: 20px;
 
@@ -278,36 +281,12 @@
   }
 
   .courses {
-
-    &__button {
-      font-size: 12px;
-    }
-
     &__wrapper {
       gap: 0;
     }
 
-    &__head {
-      max-width: 200px;
-    }
-
-    &__title {
-      font-size: 15px;
-    }
-
-    &__text {
-      font-size: 10px;
-    }
-
     &__item {
       max-width: 190px;
-
-      &-image {
-
-        img {
-          width: 100%;
-        }
-      }
 
       &-name {
         padding: 10px;
@@ -316,43 +295,16 @@
       &-price {
         padding: 14px 14px 14px 10px;
       }
-
-      &-title {
-        font-size: 12px;
-      }
-
-      &-description {
-        font-size: 10px;
-      }
     }
   }
 
   .team {
-
     &__wrapper {
       gap: 8px;
     }
 
-    &__head {
-      max-width: 195px;
-    }
-
-    &__title {
-      font-size: 15px;
-    }
-
-    &__text {
-      font-size: 10px;
-    }
-
     &__item {
       max-width: 145px;
-
-      &-image {
-        img {
-          width: 100%;
-        }
-      }
 
       &-content {
         padding: 10px 6px;
@@ -378,7 +330,12 @@
   }
 }
 
+/* ==========================================================================
+=========================       MEDIA 640px      ============================
+===========================================================================*/
+
 @media (max-width: 640px) {
+  
   .container {
     padding-inline: 10px;
   }
@@ -431,21 +388,46 @@
   }
 }
 
+/* ==========================================================================
+=========================       MEDIA 590px      ============================
+===========================================================================*/
+
 @media (max-width: 590px) {
-  .products {
+
+  .products,
+  .steps,
+  .courses,
+  .team {
     margin-bottom: 60px;
   }
-  .steps {
-    margin-bottom: 60px;
 
-    &__wrapper {
-      flex-direction: column;
-      align-items: center;
+  .steps__wrapper,
+  .courses__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .steps__head,
+  .courses__head {
+    text-align: center;
+    max-width: 300px;
+  }
+
+  .steps,
+  .courses {
+    &__content {
+      &::before {
+        left: 0;
+      }
+
+      &::after {
+        left: 21px;
+      }
     }
+  }
 
+  .steps {
     &__head {
-      text-align: center;
-      max-width: 300px;
       padding-right: 0;
       margin-bottom: 30px;
     }
@@ -457,71 +439,63 @@
     &__list {
       gap: 25px 40px;
     }
-
-    &__content {
-
-      &:before {
-        left: 0;
-      }
-      &::after {
-        left: 21px;
-      }
-    }
   }
 
   .courses {
-
-    margin-bottom: 60px;
-
     &__wrapper {
-      flex-direction: column;
-      align-items: center;
       gap: 30px;
     }
-
-    &__head {
-      max-width: 300px;
-      text-align: center;
-    }
-
-    &__content {
-      gap: 10px;
-
-      &:before {
-        left: 0;
-      }
-      &::after {
-        left: 21px;
-      }
-    }
-  }
-
-  .team {
-    margin-bottom: 60px;
   }
 }
 
-@media (max-width: 500px) {
-  .footer {
+/* ==========================================================================
+=========================       MEDIA 500px      ============================
+===========================================================================*/
 
+@media (max-width: 500px) {
+
+  .footer__wrapper,
+  .footer__menu-list {
+    flex-direction: column;
+  }
+
+  .footer {
     &__wrapper {
-      flex-direction: column;
       row-gap: 50px;
       padding-block: 50px;
       font-size: 14px;
     }
 
     &__menu {
-
       &-list {
-        flex-direction: column;
         align-items: center;
       }
     }
   }
 }
 
+/* ==========================================================================
+=========================       MEDIA 480px      ============================
+===========================================================================*/
+
 @media (max-width: 480px) {
+
+  .products__wrapper,
+  .team__wrapper {
+    flex-direction: column;
+  }
+
+  .products__wrapper,
+  .team__head {
+    text-align: center;
+  }
+
+  .products__head,
+  .team__head {
+    margin-bottom: 30px;
+    max-width: 300px;
+  }
+
   .hero {
     margin-bottom: 100px;
 
@@ -585,15 +559,8 @@
   .products {
     margin-bottom: 60px;
 
-    &__wrapper {
-      flex-direction: column;
-      text-align: center;
-    }
-
     &__head {
-      max-width: 300px;
       margin: 0 auto;
-      margin-bottom: 30px;
     }
     &__content {
 
@@ -604,10 +571,7 @@
         left: 21px;
       }
     }
-  }
 
-  .products {
-    
     &__item {
       padding-bottom: 30px;
 
@@ -627,16 +591,8 @@
   }
 
   .team {
-
     &__wrapper {
-      flex-direction: column;
       align-items: center;
-    }
-
-    &__head {
-      margin-bottom: 30px;
-      max-width: 300px;
-      text-align: center;
     }
 
     &__content {
@@ -653,9 +609,13 @@
   }
 }
 
-@media (max-width: 475px) {
-  .team {
+/* ==========================================================================
+=========================       MEDIA 475px      ============================
+===========================================================================*/
 
+@media (max-width: 475px) {
+
+  .team {
     &__content {
       grid-template-columns: 1fr;
     }
@@ -666,9 +626,13 @@
   }
 }
 
-@media (max-width: 410px) {
-  .steps {
+/* ==========================================================================
+=========================       MEDIA 410px      ============================
+===========================================================================*/
 
+@media (max-width: 410px) {
+
+  .steps {
     &__list {
       gap: 20px 25px;
     }
@@ -692,7 +656,40 @@
   }
 }
 
+/* ==========================================================================
+=========================       MEDIA 360px      ============================
+===========================================================================*/
+
 @media (max-width: 360px) {
+
+  .hero__title,
+  .hero__text,
+  .products__item-description {
+    margin-bottom: 15px;
+  }
+
+  .hero__text,
+  .products__item-price,
+  .products__item-title {
+    font-size: 10px;
+  }
+
+  .about__title,
+  .about__text,
+  .products__title {
+    margin-bottom: 10px;
+  }
+
+  .products__item-image,
+  .products__item-price {
+    margin-bottom: 5px;
+  }
+
+  .products__item-description,
+  .button-buy {
+    font-size: 6px; 
+  }
+
   .hero {
     margin-bottom: 50px;
 
@@ -703,13 +700,10 @@
 
     &__title {
       font-size: 18px;
-      margin-bottom: 15px;
     }
 
     &__text {
-      font-size: 10px;
       line-height: 1.1;
-      margin-bottom: 15px;
       max-width: 190px;
     }
 
@@ -722,7 +716,6 @@
   }
 
   .about {
-
     &__wrapper {
       padding: 25px 0 20px;
       column-gap: 25px;
@@ -732,13 +725,8 @@
       min-width: 235px;
     }
 
-    &__title {
-      margin-bottom: 10px;
-    }
-
     &__text {
       font-size: 8px;
-      margin-bottom: 10px;
     }
 
     &__images {
@@ -757,39 +745,18 @@
   }
 
   .products {
-
     &__head {
       max-width: 235px;
       margin-bottom: 25px;
-    }
-
-    &__title {
-      margin-bottom: 10px;
     }
 
     &__item {
       max-width: 140px;
       padding-inline: 0;
 
-      &-image {
-        margin-bottom: 5px;
-      }
-      &-price {
-        margin-bottom: 5px;
-        font-size: 10px;
-      }
       &-title {
         margin-bottom: 7px;
-        font-size: 10px;
-      }
-      &-description {
-        margin-bottom: 15px;
-        font-size: 6px;
       }
     }
-  }
-
-  .button-buy {
-    font-size: 6px; 
   }
 }
