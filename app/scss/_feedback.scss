@@ -1,0 +1,53 @@
+.feedback {
+  &__wrapper {
+    gap: 20px;
+  }
+
+  &__head {
+    max-width: 370px;
+  }
+
+  &__slider {
+    max-width: 770px;
+  }
+
+  &__content {
+    padding-bottom: 110px;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0 16px;
+
+    &-content {
+      padding-top: 55px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-icon {
+      margin-bottom: 12px;
+
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    &-name {
+      font-size: 16px;
+      font-family: "Yeseva One", serif;
+      margin-bottom: 15px;
+    }
+
+    &-text {
+      margin-bottom: 15px;
+    }
+
+    &-btn {
+      text-align: right;
+      margin-top: auto;
+    }
+  }
+}
