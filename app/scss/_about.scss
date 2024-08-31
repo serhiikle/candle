@@ -5,13 +5,7 @@
 
   &__wrapper {
     padding: 50px 0 60px;
-    display: flex;
-    align-items: center;
-    column-gap: 20px;
-  }
-
-  &__content {
-    min-width: 370px;
+    grid-template-columns: 370px auto;
   }
 
   &__title,
@@ -25,21 +19,6 @@
     column-gap: 20px;
     padding-left: 90px;
     padding-bottom: 70px;
-    border-bottom: solid 1px $teachColor;
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: -12px;
-      left: -21px;
-      width: 24px;
-      height: 33px;
-      background-image: url("../images/about-deco.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      z-index: 2;
-    }
 
     figure {
       font-size: 11px;

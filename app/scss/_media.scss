@@ -13,15 +13,33 @@
 }
 
 /* ==========================================================================
+========================       MEDIA 1100px      ============================
+===========================================================================*/
+
+@media (max-width: 1100px) {
+  .steps {
+    &__list {
+      gap: 50px 15px;
+    }
+
+    &__item {
+      column-gap: 15px;
+    }
+  }
+}
+
+/* ==========================================================================
 ========================       MEDIA 1000px      ============================
 ===========================================================================*/
 
 @media (max-width: 1000px) {
 
+  .about__head,
   .team__head,
   .hero__text,
   .products__head,
-  .courses__head {
+  .courses__head,
+  .steps__head {
     max-width: 300px;
   }
 
@@ -43,9 +61,6 @@
   }
 
   .about {
-    &__content {
-      min-width: 300px;
-    }
 
     &__images {
       padding-left: 0;
@@ -176,6 +191,7 @@
     font-size: 15px;
   }
 
+  .about__head,
   .products__head,
   .courses__head,
   .team__head {
@@ -225,7 +241,8 @@
 
   .about {
     &__wrapper {
-      column-gap: 45px;
+      gap: 25px;
+      grid-template-columns: auto auto;
     }
 
     &__images {
@@ -253,10 +270,6 @@
   }
 
   .products {
-    &__wrapper {
-      column-gap: 30px;
-    }
-
     &__content {
       justify-content: space-between;
     }
@@ -335,6 +348,46 @@
 ===========================================================================*/
 
 @media (max-width: 640px) {
+
+  .about,
+  .products,
+  .steps,
+  .courses,
+  .team,
+  .feedback,
+  .certificate {
+    margin-bottom: 70px;
+  }
+
+  .about,
+  .products,
+  .steps,
+  .courses {
+    &__wrapper {
+      grid-template-columns: 1fr;
+    }
+
+    &__head {
+      max-width: 370px;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  .about,
+  .products,
+  .steps,
+  .courses {
+    &__content {
+      &::before {
+        left: 0;
+      }
+
+      &::after {
+        left: 21px;
+      }
+    }
+  }
   
   .container {
     padding-inline: 10px;
@@ -374,10 +427,14 @@
     }
   }
 
+  .products {
+    &__content {
+      gap: 40px 0;
+    }
+  }
+
   .team {
-
     &__item {
-
       &-content {
         padding: 10px 6px;
         max-width: 110px;
@@ -413,23 +470,13 @@
     max-width: 300px;
   }
 
-  .steps,
-  .courses {
-    &__content {
-      &::before {
-        left: 0;
-      }
-
-      &::after {
-        left: 21px;
-      }
-    }
+  .hero__content {
+    padding-top: 60px;
   }
 
   .steps {
     &__head {
       padding-right: 0;
-      margin-bottom: 30px;
     }
 
     &__title {
@@ -482,7 +529,8 @@
 
   .products__wrapper,
   .team__wrapper {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 
   .products__wrapper,
@@ -550,10 +598,6 @@
         width: 140px;
       }
     }
-
-    figcaption {
-      display: none;
-    }
   }
 
   .products {
@@ -573,7 +617,6 @@
     }
 
     &__item {
-      padding-bottom: 30px;
 
       &-image {
         margin-bottom: 6px;
@@ -593,6 +636,10 @@
   .team {
     &__wrapper {
       align-items: center;
+    }
+
+    &__head {
+      margin: 0 auto;
     }
 
     &__content {
@@ -690,6 +737,11 @@
     font-size: 6px; 
   }
 
+  .about__content,
+  .products__head {
+    max-width: 235px;
+  }
+
   .hero {
     margin-bottom: 50px;
 
@@ -718,35 +770,25 @@
   .about {
     &__wrapper {
       padding: 25px 0 20px;
-      column-gap: 25px;
-    }
-
-    &__content {
-      min-width: 235px;
+      column-gap: 30px;
     }
 
     &__text {
       font-size: 8px;
     }
 
+    &__content {
+      justify-content: start;
+    }
+
     &__images {
       padding-bottom: 32px;
       align-items: center;
-
-      &-item--1 {
-        transform: translateY(10px);
-      }
-
-      &-item--2,
-      &-item--3 {
-        display: none;
-      }
     }
   }
 
   .products {
     &__head {
-      max-width: 235px;
       margin-bottom: 25px;
     }
 

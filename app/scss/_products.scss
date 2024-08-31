@@ -1,9 +1,11 @@
 .products {
-
+  &__content {
+    gap: 70px 0;
+  }
+  
   &__item {
     max-width: 300px;
     padding-inline: 5px;
-    padding-bottom: 70px;
     text-align: center;
     margin: 0 auto;
     display: grid;

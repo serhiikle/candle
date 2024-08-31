@@ -59,21 +59,23 @@ img {
   position: absolute;
 }
 
+.about,
 .products,
 .steps,
 .courses,
 .team,
 .feedback,
 .certificate {
-  margin-bottom: 159px;
+  margin-bottom: 150px;
 
   &__wrapper {
-    display: flex;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
   }
 
   &__head {
-    width: 370px;
+    max-width: 370px;
   }
 
   &__title {
@@ -86,6 +88,7 @@ img {
     flex-wrap: wrap;
     justify-content: space-around;
     position: relative;
+    padding-bottom: 70px;
 
     &::before {
       content: "";
@@ -106,7 +109,7 @@ img {
       left: 0;
       width: 1000%;
       height: 1px;
-      background-color: $secondaryBgColor;
+      background-color: $teachColor;
     }
   }
 }

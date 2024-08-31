@@ -1,11 +1,5 @@
 .steps {
-
-  &__head {
-    padding-right: 20px;
-  }
-  
   &__list {
-    padding-bottom: 70px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 70px 25px;
