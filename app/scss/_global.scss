@@ -63,7 +63,8 @@ img {
 .steps,
 .courses,
 .team,
-.feedback {
+.feedback,
+.certificate {
   margin-bottom: 159px;
 
   &__wrapper {
@@ -72,7 +73,7 @@ img {
   }
 
   &__head {
-    max-width: 372px;
+    width: 370px;
   }
 
   &__title {
@@ -107,5 +108,19 @@ img {
       height: 1px;
       background-color: $secondaryBgColor;
     }
+  }
+}
+
+// sloder
+
+.swiper-pagination-bullet {
+  height: 4px;
+  width: 53px;
+  border-radius: 0;
+  background-color: $numColor;
+  opacity: 1;
+
+  &.swiper-pagination-bullet-active {
+    background-color: $teachColor;
   }
 }

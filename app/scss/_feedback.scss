@@ -3,12 +3,13 @@
     gap: 20px;
   }
 
-  &__head {
-    max-width: 370px;
-  }
-
   &__slider {
     max-width: 770px;
+    overflow: hidden;
+
+    & .swiper-pagination {
+      bottom: 45px;
+    }
   }
 
   &__content {
