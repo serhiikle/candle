@@ -1,10 +1,10 @@
 /* Mobile menu */
 
 const menuBtn = document.querySelector('.burger-menu-btn');
-const menuList = document.querySelector('.header__menu');
+const headerSection = document.querySelector('.header');
 
 menuBtn.addEventListener('click', () => {
-  menuList.classList.toggle('menu--open');
+  headerSection.classList.toggle('menu--open');
 });
 
 /* feedback slider */
@@ -24,9 +24,18 @@ const feedbackSlider = new Swiper('.feedback__slider', {
 const certificateSlider = new Swiper('.certificate__slider', {
  
   loop: true,
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 20,
-
+  breakpoints: {
+    441: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    591: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    }
+  },
   // pagination
   pagination: {
     el: '.swiper-pagination',

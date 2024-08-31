@@ -53,18 +53,19 @@
   border: none;
   background-color: transparent;
   width: 30px;
-  height: 25px;
+  height: 20px;
   justify-content: space-between;
   flex-direction: column;
   padding: 0;
   z-index: 5;
   cursor: pointer;
+  z-index: 9999;
 
   span {
     display: inline-block;
     width: 100%;
-    height: 1px;
-    background-color: $teachColor;
+    height: 2px;
+    background-color: $btnBgColor;
 
   }
 }
@@ -94,5 +95,44 @@
     box-shadow: 2px 2px 3px rgba(0, 0, 0, .2);
     background-color: $teachColor;
     color: $whiteColor;
+  }
+}
+
+//================ FORM =====================
+
+.form {
+  padding: 70px 40px;
+  background-color: #fff;
+  box-shadow: 0px 4px 11px 0px rgba(199, 175, 165, 0.30);
+  margin-top: 110px;
+
+  &__title {
+    font-size: 25px;
+    font-family: "Yeseva One", serif;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__email {
+    margin-bottom: 50px;
+  }
+
+  input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #000;
+    color: $btnColor;
+    padding: 0 10px;
+
+    &::placeholder {
+      color: $placeholderColor;
+      letter-spacing: 1px;
+    }
+
+    &:focus {
+      outline: 1px solid rgba($btnBgColor, .3);
+    }
   }
 }

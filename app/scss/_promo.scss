@@ -1,0 +1,17 @@
+.promo {
+  background-image: url(../images/promo.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding: 145px 20px;
+
+  &__wrapper {
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__text {
+    font-family: "Yeseva One" ,serif;
+    font-size: 40px;
+    color: $whiteColor;
+  }
+}

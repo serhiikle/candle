@@ -1,21 +1,5 @@
 .certificate {
-  &__wrapper {
-    gap: 20px;
-    display: grid;
-    grid-template-columns: auto auto;
-  }
-
-  &__content {
-    padding-bottom: 110px;
-  }
-
   &__slider {
     max-width: 1127px;
-    overflow: hidden;
-
-    & .swiper-pagination {
-      bottom: 45px;
-      text-align: left;
-    }
   }
 }

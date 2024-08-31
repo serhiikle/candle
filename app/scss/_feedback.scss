@@ -1,19 +1,6 @@
 .feedback {
-  &__wrapper {
-    gap: 20px;
-  }
-
   &__slider {
     max-width: 770px;
-    overflow: hidden;
-
-    & .swiper-pagination {
-      bottom: 45px;
-    }
-  }
-
-  &__content {
-    padding-bottom: 110px;
   }
 
   &__item {
@@ -43,7 +30,7 @@
     }
 
     &-text {
-      margin-bottom: 15px;
+      margin-bottom: 25px;
     }
 
     &-btn {

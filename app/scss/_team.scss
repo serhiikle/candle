@@ -1,12 +1,7 @@
 .team {
-
   color: $whiteColor;
   background-color: $secondaryBgColor;
   padding: 60px 0 80px;
-
-  &__wrapper {
-    gap: 20px;
-  }
   
   &__content {
     display: grid;
