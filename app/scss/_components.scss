@@ -125,6 +125,7 @@
     border-bottom: 1px solid #000;
     color: $btnColor;
     padding: 0 10px;
+    font-size: 16px;
 
     &::placeholder {
       color: $placeholderColor;
@@ -186,8 +187,4 @@
 
 .accordeon__title.accordeon__title--active::after {
   transform: translateY(-50%) rotate(180deg);
-}
-
-.accordeon__text.accordeon__text--expand {
-  
 }
