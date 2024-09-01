@@ -12,7 +12,8 @@
   }
 
   .feedback,
-  .certificate {
+  .certificate,
+  .questions {
     &__wrapper {
       grid-template-columns: 250px auto;
     }
@@ -317,7 +318,8 @@
   .courses__title,
   .team__title,
   .feedback__title,
-  .certificate__title {
+  .certificate__title,
+  .accordeon__title {
     font-size: 15px;
   }
 
@@ -334,7 +336,8 @@
   }
 
   .feedback__wrapper,
-  .certificate__wrapper {
+  .certificate__wrapper,
+  .questions__wrapper {
     grid-template-columns: 200px auto;
   }
 
@@ -554,7 +557,8 @@
   .courses,
   .feedback,
   .certificate,
-  .promo {
+  .promo,
+  .questions {
     &__wrapper {
       grid-template-columns: 1fr;
       gap: 30px;
@@ -572,7 +576,8 @@
   .steps,
   .courses,
   .feedback,
-  .certificate {
+  .certificate,
+  .questions {
     &__content {
       &::before {
         left: 0;
@@ -1091,6 +1096,16 @@
       &-title {
         margin-bottom: 7px;
       }
+    }
+  }
+
+  .accordeon__title {
+    font-size: 12px;
+
+    &::after {
+      width: 12px;
+      height: 12px;
+      background-size: contain;
     }
   }
 }

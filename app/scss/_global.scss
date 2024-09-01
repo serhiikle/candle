@@ -68,7 +68,8 @@ img {
 .feedback,
 .certificate,
 .promo,
-.subscription {
+.subscription,
+.questions {
   margin-bottom: 150px;
 
   &__wrapper {
@@ -120,7 +121,8 @@ img {
 .feedback__wrapper,
 .about__wrapper,
 .certificate__wrapper,
-.team__wrapper {
+.team__wrapper,
+.questions__wrapper {
   grid-template-columns: 370px auto;
 }
 
