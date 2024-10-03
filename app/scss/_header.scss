@@ -1,8 +1,8 @@
 .header {
-  margin-bottom: 50px;
+  margin-block-end: 5rem;
 
   &__wrapper {
-    padding-block: 4px;
+    padding-block: .4rem;
   }
 
   &__phone {
@@ -11,18 +11,18 @@
     &::before {
       content: "";
       position: absolute;
-      width: 20px;
-      height: 20px;
+      inline-size: 2rem;
+      block-size: 2rem;
       background-image: url("../images/phone.svg");
       background-size: cover;
       background-position: center;
-      top: -2px;
-      left: -21px;
+      top: -.2rem;
+      left: -2.1rem;
       transition: transform .3s;
     }
   
     &:hover::before {
-      transform: translateX(-3px);
+      transform: translateX(-.3rem);
     }
   }
 }

@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-size: 62.8%;
 }
 
 *,
@@ -13,10 +14,9 @@ body {
   background-color: $mainBgColor;
   color: $blackColor;
   font-family: "Comfortaa", sans-serif;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.2;
-  // overflow: hidden;
 }
 
 main {
@@ -33,9 +33,9 @@ img {
 }
 
 .container {
-  max-width: 1180px;
-  padding-inline: 20px;
-  margin: 0 auto;
+  max-inline-size: 118rem;
+  padding-inline: 2rem;
+  margin-inline: auto;
 }
 
 .header__wrapper,
@@ -45,16 +45,10 @@ img {
   align-items: center;
 }
 
-.steps__item.reverse {
-  .steps__item-text {
-    order: 1;
-  }
-}
-
 .courses__item-name,
 .courses__item-time,
 .courses__item-price {
-  font-size: 11px;
+  font-size: 1.1rem;
   font-family: "Yeseva One", serif;
   color: $whiteColor;
   background-color: $numColor;
@@ -71,37 +65,37 @@ img {
 .promo,
 .subscription,
 .questions {
-  margin-bottom: 150px;
+  margin-block-end: 15rem;
 
   &__wrapper {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 20px;
+    gap: 2rem;
   }
 
   &__head {
-    max-width: 370px;
+    max-inline-size: 37rem;
   }
 
   &__title {
-    margin-bottom: 15px;
+    margin-block-end: 1.5rem;
   }
 
   &__content {
-    width: 100%;
+    inline-size: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     position: relative;
-    padding-bottom: 70px;
+    padding-block-end: 7rem;
 
     &::before {
       content: "";
       position: absolute;
-      width: 24px;
-      height: 33px;
-      left: -22px;
-      bottom: -11px;
+      inline-size: 2.4rem;
+      block-size: 3.3rem;
+      left: -2.2rem;
+      bottom: -1.1rem;
       background-image: url("../images/about-deco.svg");
       background-position: center;
       background-repeat: no-repeat;
@@ -124,14 +118,14 @@ img {
 .certificate__wrapper,
 .team__wrapper,
 .questions__wrapper {
-  grid-template-columns: 370px auto;
+  grid-template-columns: 37rem auto;
 }
 
 // sloder
 
 .swiper-pagination-bullet {
-  height: 4px;
-  width: 53px;
+  block-size: .4rem;
+  inline-size: 5.3rem;
   border-radius: 0;
   background-color: $numColor;
   opacity: 1;
@@ -147,12 +141,12 @@ img {
     overflow: hidden;
 
     & .swiper-pagination {
-      bottom: 45px;
+      bottom: 4.5rem;
       text-align-last: left;
     }
   }
 
   &__content {
-    padding-bottom: 110px;
+    padding-block-end: 11rem;
   }
 }

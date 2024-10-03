@@ -1,35 +1,39 @@
 .products {
   &__content {
-    gap: 70px 0;
+    gap: 7rem 0;
   }
   
   &__item {
-    max-width: 300px;
-    padding-inline: 5px;
+    max-inline-size: 30rem;
+    padding-inline: .5rem;
     text-align: center;
-    margin: 0 auto;
+    margin-inline: auto;
     display: grid;
 
     &-image {
-      width: 100%;
-      margin-bottom: 8px;
+      inline-size: 100%;
+      margin-block-end: .8rem;
+
+      img {
+        inline-size: 100%;
+      }
     }
 
     &-price {
       font-family: "Yeseva One", serif;
-      font-size: 16px;
-      margin-bottom: 12px;
+      font-size: 1.6rem;
+      margin-block-end: 1.2rem;
     }
 
     &-title {
       font-family: "Yeseva One", serif;
-      font-size: 16px;
-      margin-bottom: 16px;
+      font-size: 1.6rem;
+      margin-block-end: 1.6rem;
     }
 
     &-description {
-      font-size: 12px;
-      margin-bottom: 27px;
+      font-size: 1.2rem;
+      margin-block-end: 2.7rem;
     }
   }
 }

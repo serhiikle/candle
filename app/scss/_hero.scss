@@ -1,32 +1,31 @@
 .hero {
-  margin-bottom: 150px;
+  margin-block-end: 15rem;
 
   &__wrapper {
     position: relative;
   }
 
   &__content {
-    max-width: 385px;
-    padding-top: 165px;
+    max-inline-size: 38.5rem;
+    padding-block-start: 16.5rem;
     position: absolute;
     left: 0;
     top: 0;
   }
 
   &__title {
-    font-size: 30px;
-    margin-bottom: 15px;
+    font-size: 3rem;
+    margin-block-end: 1.5rem;
   }
 
   &__text {
-    margin-bottom: 50px;
+    margin-block-end: 5rem;
   }
 
   &__image {
-
     img {
-      width: 100%;
-      transform: translate(195px, 0px);
+      inline-size: 100%;
+      transform: translate(19.5rem, 0);
     }
   }
 }

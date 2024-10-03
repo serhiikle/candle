@@ -27,11 +27,11 @@ const certificateSlider = new Swiper('.certificate__slider', {
   slidesPerView: 1,
   spaceBetween: 20,
   breakpoints: {
-    441: {
+    641: {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    591: {
+    769: {
       slidesPerView: 3,
       spaceBetween: 20,
     }

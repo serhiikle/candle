@@ -1,41 +1,41 @@
 .feedback {
   &__slider {
-    max-width: 770px;
+    max-inline-size: 77rem;
   }
 
   &__item {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 0 16px;
+    gap: 0 1.6rem;
 
     &-content {
-      padding-top: 55px;
+      padding-block-start: 5.5rem;
       display: flex;
       flex-direction: column;
     }
 
     &-icon {
-      margin-bottom: 12px;
+      margin-block-end: 1.2rem;
 
       img {
-        width: 25px;
-        height: 25px;
+        inline-size: 2.5rem;
+        block-size: 2.5rem;
       }
     }
 
     &-name {
-      font-size: 16px;
+      font-size: 1.6rem;
       font-family: "Yeseva One", serif;
-      margin-bottom: 15px;
+      margin-block-end: 1.5rem;
     }
 
     &-text {
-      margin-bottom: 25px;
+      margin-block-end: 2.5rem;
     }
 
     &-btn {
       text-align: right;
-      margin-top: auto;
+      margin-block-start: auto;
     }
   }
 }
